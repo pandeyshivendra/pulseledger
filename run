@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+echo "🔨 Building Docker image..."
+docker build -t pulseledger-app .
+
+echo "Running container on http://localhost:8080 ..."
+docker run --rm --env-file .env -p 8080:8080 pulseledger-app

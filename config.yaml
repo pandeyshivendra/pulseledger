@@ -1,0 +1,8 @@
+server:
+  port: "8080"
+database:
+  path: "./pulseledger.db"
+  reset_on_start: true
+audit:
+  worker:
+    count: 5

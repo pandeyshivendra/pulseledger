@@ -1,0 +1,16 @@
+# Ignore the SQLite DB
+pulseledger.db
+data/
+*.db
+
+# Go build artifacts
+pulseledger
+*.exe
+*.out
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# Environment
+# .env
