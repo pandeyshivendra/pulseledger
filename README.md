@@ -6,6 +6,9 @@ A Go Fiber-based microservice to manage accounts and transactions, using SQLite 
 
 ## Build & Run
 
+> This project uses **Go 1.24** and builds using a multi-stage **Alpine Linux-based Docker image** (`golang:1.24.2-alpine`).  
+> The runtime container is based on `alpine:latest`.
+
 ### Run Locally (Without Docker)
 
 ```bash
@@ -38,7 +41,7 @@ database:
 
 ```env
 SERVER_PORT=8080
-DATABASE_PATH=/app/pulseledger.db
+DATABASE_PATH=./pulseledger.db
 DATABASE_RESET_ON_START=true
 ```
 
