@@ -85,6 +85,14 @@ curl -X POST http://localhost:8080/api/v1/transactions \
   }'
 ```
 
+### Get Account by ID
+
+```bash
+curl http://localhost:8080/api/v1/accounts/1
+```
+
+> Replace `1` with the actual account ID you want to retrieve.
+
 ---
 
 ## Folder Structure
