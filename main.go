@@ -33,7 +33,7 @@ func InitApp() *fiber.App {
 	accountHandler := handlers.NewAccountHandler(accountService)
 	transactionHandler := handlers.NewTransactionHandler(transactionService)
 
-	// Register routes via handler interface
+	// Register routes
 	api := app.Group("/api/v1")
 	accountHandler.RegisterRoutes(api)
 	transactionHandler.RegisterRoutes(api)
